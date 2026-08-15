@@ -35,7 +35,12 @@ They are not linked. Publishing a new version updates the Release; the committed
 copy stays at whatever version it was when it was added, and git history keeps
 every version ever committed.
 
-The immediate risk is small — nobody is served the stale copy, because the
-download link goes to the Release. The problems are that repository size grows
-permanently with each binary committed, and that a reader cannot tell which copy
-is authoritative without checking the link.
+The two copies had already drifted, which is what settled it. The committed
+file was 1,683,559 bytes, added on 2026-07-13; the Release asset is 1,911,535
+bytes, published 2026-07-14 — a newer build. Nobody was served the stale one,
+because the documented download link points at the Release, but the repository
+was carrying an outdated installer that a reader could easily have taken for
+the current one.
+
+The committed copy has been removed. The Release remains the single source, as
+the README always said it should be.

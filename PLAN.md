@@ -4,22 +4,15 @@ Read `STATE.md` first.
 
 ---
 
-## 1. Decide which copy of the binary is real
+## 1. Done — the committed binary is gone
 
-`CamPass.dmg` exists both as a Release asset and as a tracked file in `main`,
-and the README says only the former should exist.
+`CamPass.dmg` existed both as a Release asset and as a tracked file, and the two
+had drifted: the committed copy was an older, smaller build than the Release.
+It has been removed, so the repository now matches the policy the README states.
 
-Almost certainly: **remove the committed copy** and keep the Release asset, so
-the repository matches the policy it states. The download URL already points at
-the Release, so nothing breaks.
-
-Note that removing it from `main` does not remove it from history — the 1.7 MB
-stays in every clone. That is tolerable once. It is the reason to stop now
-rather than after several products have been added the same way.
-
-The alternative is to change the README to describe what actually happens. That
-is worse: committing binaries to git has no upside here, and the Release
-mechanism already gives permanent URLs.
+Note that removing it from `main` does not remove it from history — the 1.6 MB
+stays in every clone. That is tolerable once, and it is the reason to have
+stopped now rather than after several more products were added the same way.
 
 ---
 
