@@ -5,6 +5,14 @@ apps. This repository contains **no source code** — application source lives i
 private repositories. Only signed, notarized release artifacts are published here,
 as GitHub Release assets.
 
+## Where to look
+
+| File | Answers |
+| --- | --- |
+| `README.md` (this file) | How do I work on this? |
+| [`STATE.md`](STATE.md) | Where does it stand right now? |
+| [`PLAN.md`](PLAN.md) | What happens next? |
+
 ## Products
 
 ### CamPass — pass the camera between your Macs
